@@ -21,11 +21,12 @@ struct CalculatorBrain {
         let value = calculateBmi()
         let stringedValue = String(format: "%.1f", value)
         if value < 18.5 {
-            bmi = BMI(value: stringedValue, color: UIColor.blue  , advice: "Eat more pies!")
+            bmi = BMI(value: stringedValue, color: UIColor(red: 0.00, green: 0.66, blue: 1.00, alpha: 1.00) , advice: "Eat more pies!")
         } else if value < 25 {
-            bmi = BMI(value: stringedValue, color: UIColor.green, advice: "Fit as a fiddle!")
+            bmi = BMI(value: stringedValue, color: UIColor(red: 0.30, green: 0.82, blue: 0.22, alpha: 1.00)
+                      , advice: "Fit as a fiddle!")
         } else if value > 24.9{
-            bmi = BMI(value: stringedValue, color: UIColor.red, advice: "Eat less pies!")
+            bmi = BMI(value: stringedValue, color: UIColor(red: 0.91, green: 0.25, blue: 0.09, alpha: 1.00), advice: "Eat less pies!")
         }
     }
 }
